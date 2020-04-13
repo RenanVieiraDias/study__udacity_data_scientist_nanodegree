@@ -15,7 +15,7 @@ This repository include all the work develop on the [Udacity Data Scientist Nano
 
 ## Udacity Data Scientist Nanodegree - Version 2020
 
-1. (Project 01 - Writing a Data Scientist Blog Post)[https://medium.com/@renanvieiradias/what-data-tells-about-data-jobs-ad785fb07a09] 
+1. [Project 01 - Writing a Data Scientist Blog Post](https://medium.com/@renanvieiradias/what-data-tells-about-data-jobs-ad785fb07a09])
 2. Project 02 - Disaster Response Pipeline
 3. WIP
 4. WIP
@@ -24,7 +24,7 @@ This repository include all the work develop on the [Udacity Data Scientist Nano
 
 ### Extras
 
-The 'Project 01 - Writing a Data Scientist Blog Post' from the new course version is in this repository: https://github.com/RenanVieiraDias/datasciencemedium
+The 'Project 01 - Writing a Data Scientist Blog Post' from the new course version is in this [repository](https://github.com/RenanVieiraDias/datasciencemedium)
 
 There are jupyter notebooks HTML in the folders if you are curious.
  
