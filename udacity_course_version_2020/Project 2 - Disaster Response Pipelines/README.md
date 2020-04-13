@@ -1,16 +1,29 @@
-# Project Components
-There are three components you'll need to complete for this project.
+# Project 2 - Disaster Response Pipelines
+Rubric: https://review.udacity.com/#!/rubrics/1565/view
 
-1. ETL Pipeline
-In a Python script, process_data.py, write a data cleaning pipeline that:
+
+## Project Summary
+
+Following a disaster there will be millions and millions of communications, and the goal is to identify which are relevant to the disaster response professionals (Ex. Ambulances, Police, ...).
+
+Data source is 'Figure Eight' and includes theirs pre-labeled tweets and text messages from real life disasters.
+
+
+## Project Components
+
+There are three components on this project.
+
+1. ETL Pipeline (process_data.py)
+A data cleaning pipeline that:
 
 Loads the messages and categories datasets
 Merges the two datasets
 Cleans the data
 Stores it in a SQLite database
 
-2. ML Pipeline
-In a Python script, train_classifier.py, write a machine learning pipeline that:
+
+2. ML Pipeline (train_classifier.py)
+A machine learning pipeline that:
 
 Loads data from the SQLite database
 Splits the dataset into training and test sets
@@ -20,16 +33,19 @@ Outputs results on the test set
 Exports the final model as a pickle file
 
 3. Flask Web App
-We are providing much of the flask web app for you, but feel free to add extra features depending on your knowledge of flask, html, css and javascript. For this part, you'll need to:
+The app that will generate a webpage to acess the application.
 
-Modify file paths for database and model as needed
-Add data visualizations using Plotly in the web app. One example is provided for you
-Github and Code Quality
-Your project will also be graded based on the following:
 
-Use of Git and Github
-Strong documentation
-Clean and modular code
-Follow the RUBRIC when you work on your project to assure you meet all of the necessary criteria for developing the pipelines and web app.
+## Instructions to Run:
 
-Rubric: https://review.udacity.com/#!/rubrics/1565/view
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+3. Go to http://0.0.0.0:3001/
